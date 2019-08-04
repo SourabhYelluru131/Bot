@@ -3,8 +3,9 @@ from discord.ext import commands
 import re
 import wolframalpha
 import random
+import token
 
-app_ID = "W94HKW-JVXYUVTR8T"
+app_ID = token.Wolframappid
 waclient = wolframalpha.Client(app_ID)
 messageHistory = set()
 computemessageHistory = set()

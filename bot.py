@@ -6,6 +6,7 @@ from discord import Embed
 from datetime import date, time,datetime,timedelta
 #from DiscordHooks import Hook, Embed, EmbedAuthor, Color
 import asyncio
+import token
 
 #================================================   Cogs   ============================================================#
 
@@ -102,4 +103,4 @@ if __name__ == '__main__':
         except Exception as error:
             print('{} cannot be loaded, [{}]'.format(extension,error))
     # Running the bot with its token
-    bot.run("NDM0Mjg1NDgxODQxMTMxNTIw.D2os4g.hnWTq3ZrpdrHJXykn3eGjsMUdz0")
+    bot.run(token.botapi)
