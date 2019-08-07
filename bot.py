@@ -51,13 +51,6 @@ async def on_message(message):
             await message.add_reaction("👀")         # Adds 👀 reaction when the bot's name is taken
     await bot.process_commands(message)              # Sends the message to process commands when done with the loop
 
-#@bot.event
-#async def on_message(ctx,message):
- #   if message.content.startswith("set webhookchannel"):
- #           webhook_channel_id = ctx.channel.id
- #           print(webhook_channel_id)
- #           await create_webhook(name=Orthohookey, avatar=None)
- #   await bot.process_commands(message)
 
 #======================================================   BOT COMMANDS   ==============================================#
 @bot.command()
@@ -75,16 +68,6 @@ async def unload(extension):
         print("Unloaded {}".format(extension))
     except Exception as error:
         print("{} cannot be unloaded. [{}]".format(extension,error))
-
-# 7
-#@bot.command()
-#async def hug(ctx, user: discord.Member):
-#    await ctx.send("{} has given {}, a hug".format(ctx.message.author.mention, user.mention))
-
-# 8
-#@bot.command()
-#async def thump(ctx, user: discord.Member):
-#    await ctx.send("Hey {}, You just got thumped on the head ! Quit being a knucklehead!".format(user.mention))
 
 #11
 @bot.command()
